@@ -1,14 +1,14 @@
-name: Testing on Windows
+name: Release
 on:
   pull_request:
     branches: [master]
 jobs:
   test:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     strategy:
       matrix:
         # NPM 7 is compatible with Node.js 15 or above
-        node-version: [15.x, 16.x]
+        node-version: [15.x]
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -29,7 +29,7 @@ jobs:
       - run: echo "Building... 🛠"
       - run: npm run build
 
-      - run: echo "Testing... 😵‍💫"
-      - run: npm run test
+      - run: echo "Publishing... ✅"
+      - run: npm run publish
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
