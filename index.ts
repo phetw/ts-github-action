@@ -21,5 +21,3 @@ export default class Students {
         return this.age;
     }
 }
-
-console.log('dsadsa')
