@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "test": "echo 'All good 👍'",
+    "lint": "eslint . --ext .ts",
     "publish": "echo 'Published 👍'"
   },
   "repository": {
@@ -20,6 +21,9 @@
   },
   "homepage": "https://github.com/phetw/ts-github-action#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.31.1",
+    "@typescript-eslint/parser": "^4.31.1",
+    "eslint": "^7.32.0",
     "typescript": "^4.4.3"
   }
 }
