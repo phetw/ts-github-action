@@ -1,7 +1,7 @@
 export default class Students {
     age: number;
     name: string;
-    roll_no: number;
+    roll_no: any;
 
     constructor(age: number, name: string, roll_no: number) {
         this.age = age;
