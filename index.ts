@@ -1,7 +1,7 @@
 export default class Students {
     age: number;
     name: string;
-    roll_no: any;
+    roll_no: number;
 
     constructor(age: number, name: string, roll_no: number) {
         this.age = age;
@@ -21,3 +21,5 @@ export default class Students {
         return this.age;
     }
 }
+
+console.log('dsadsa')
