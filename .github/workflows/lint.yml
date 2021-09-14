@@ -9,7 +9,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ job.node-version }}
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           # NPM 7 is compatible with Node.js 15 or above
