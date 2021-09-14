@@ -2,10 +2,11 @@
   "name": "ts-github-action",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo 'All good'"
+    "test": "echo 'All good 👍'",
+    "publish": "echo 'Published 👍'"
   },
   "repository": {
     "type": "git",
