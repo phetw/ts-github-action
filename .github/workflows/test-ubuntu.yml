@@ -26,14 +26,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-
       - run: npm ci
-      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
-      - name: List files in the repository
-        run: |
-ls ${{ github.workspace }}
+
       - run: echo "Building... 🛠"
       - run: npm run build
+
       - run: echo "Testing... 😵‍💫"
       - run: npm run test
+
       - run: echo "🍏 This job's status is ${{ job.status }}."
