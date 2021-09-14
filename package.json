@@ -1,0 +1,23 @@
+{
+  "name": "ts-github-action",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phetw/ts-github-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phetw/ts-github-action/issues"
+  },
+  "homepage": "https://github.com/phetw/ts-github-action#readme",
+  "devDependencies": {
+    "typescript": "^4.4.3"
+  }
+}
