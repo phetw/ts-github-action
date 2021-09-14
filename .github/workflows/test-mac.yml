@@ -1,4 +1,4 @@
-name: Testing on Ubuntu
+name: Testing on MacOS
 on:
   push:
     branches: [master]
@@ -6,7 +6,7 @@ on:
     branches: [master]
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     strategy:
       matrix:
         # NPM 7 is compatible with Node.js 15 or above
